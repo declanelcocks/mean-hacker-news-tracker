@@ -1,6 +1,6 @@
 # MEAN Tracker for Node.js News
 
-This app uses the [HN Algolia API](https://hn.algolia.com/api) to keep up-to-date with the latest [Node.js](https://nodejs.org/) news on [Hacker News](https://news.ycombinator.com/). If you have any questions, issues, or recommendations then please feel free to get in touch!
+This app uses the [HN Algolia API](https://hn.algolia.com/api) to keep up-to-date with the latest [Node.js](https://nodejs.org/) news on [Hacker News](https://news.ycombinator.com/). I've tried to comment as much as I can in the code for anyone who takes a look, but if you have any questions, issues, or recommendations then please feel free to get in touch!
 
 ## Technologies Used
 
