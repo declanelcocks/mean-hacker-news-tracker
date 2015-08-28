@@ -1,0 +1,27 @@
+doctype html
+html(ng-app='hackerNews')
+  head
+    base(href='/')
+    title HN Feed
+    link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+  body(ng-controller='navCtrl as nav')
+    div.container-fluid
+        div.row
+            div.col-xs-12.header
+                h1 HN FEED
+                h4 We <3 hacker news!
+    
+    div(ng-view).root-scope
+
+    script(src='vendor/jquery.min.js')
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    script(src='vendor/moment.min.js')
+    script(src='vendor/angular/angular.min.js')
+    script(src='vendor/angular/angular-route.min.js')
+    script(src='vendor/angular/angular-resource.min.js')
+    script(src='app.js')
+    script(src='app.routes.js')
+    script(src='services/postService.js')
+    script(src='controllers/nav.js')
+    script(src='controllers/main.js')

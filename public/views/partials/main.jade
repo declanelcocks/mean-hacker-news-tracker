@@ -1,0 +1,9 @@
+div.container-fluid.news-feed
+  div.row
+    div.col-xs-12
+      ul
+        li(ng-repeat="post in main.posts", ng-click="main.goTo(post.url)")
+          span.post-details
+            span.title {{ post.title }} 
+            span.author &nbsp;- {{ post.author }} -
+          span.date.pull-right  {{ post.created_at | fromNow }}
