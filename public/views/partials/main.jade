@@ -2,8 +2,11 @@ div.container-fluid.news-feed
   div.row
     div.col-xs-12
       ul
-        li(ng-repeat="post in main.posts", ng-click="main.goTo(post.url)")
+        li(ng-repeat="post in main.posts")
+          a.post-url(ng-href="{{post.url}}", target="_blank")
           span.post-details
             span.title {{ post.title }} 
             span.author &nbsp;- {{ post.author }} -
-          span.date.pull-right  {{ post.created_at | fromNow }}
+          span.date.pull-right
+            a.glyphicon.glyphicon-trash(aria-hidden="true", ng-click="main.deletePost(post)")
+            &nbsp;&nbsp;{{ post.created_at | fromNow }}

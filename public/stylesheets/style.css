@@ -26,7 +26,14 @@
 
 .news-feed li:hover {
   background-color: #fafafa;
-  cursor: pointer;
+}
+
+.news-feed li a.post-url {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .news-feed li span {
@@ -36,6 +43,18 @@
 .post-details {
   display: inline-block;
   max-width: 75%;
+}
+
+.news-feed li .glyphicon {
+  color: #333;
+  z-index: 999;
+}
+
+.news-feed li .glyphicon:hover,
+.news-feed li .glyphicon:focus {
+  text-decoration: none;
+  color: #888;
+  cursor: pointer;
 }
 
 .news-feed li .date {

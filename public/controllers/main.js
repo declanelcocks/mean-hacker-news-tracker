@@ -51,12 +51,30 @@
   .controller('mainCtrl', function($window, Post) {
 
     var vm = this;
+    vm.posts = null;
 
-    vm.posts = Post.query();
+    var post = null;
+
+    function init() {
+      vm.posts = Post.query();
+    };
 
     vm.goTo = function(url) {
       $window.open(url, '_blank');
     };
+
+    vm.deletePost = function(post) {
+      post = Post.get({ _id: post._id }, function() {
+        post.$delete({ _id: post._id }, function(response) {
+          console.log(response.message);
+          init();
+        });
+      });
+    };
+
+    // Initialize the page
+    // This is necessary because now when we delete a post we can force a refresh on the list of posts
+    init();
 
   })
 
