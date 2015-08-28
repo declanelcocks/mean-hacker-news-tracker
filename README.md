@@ -49,3 +49,14 @@ node server.js
 ```
 
 We're done! Open up your favourite browser and go to `http://localhost:3000/` to see the app running!
+
+### Notes
+If you'd like to play around with the auto-updater, then you could try changing the `cronJob` function in `server.js` to the following:
+
+```javascript
+var cronJob = cron.job('0 * * * * *', function(){
+  updatePosts();
+});
+```
+
+This will change the cron task so that it runs every minute instead of every hour.

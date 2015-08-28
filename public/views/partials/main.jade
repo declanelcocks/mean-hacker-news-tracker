@@ -8,5 +8,5 @@ div.container-fluid.news-feed
             span.title {{ post.title }} 
             span.author &nbsp;- {{ post.author }} -
           span.date.pull-right
+            {{ post.created_at | fromNow }}&nbsp;&nbsp;
             a.glyphicon.glyphicon-trash(aria-hidden="true", ng-click="main.deletePost(post)")
-            &nbsp;&nbsp;{{ post.created_at | fromNow }}
