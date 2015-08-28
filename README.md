@@ -25,7 +25,7 @@ This app uses the [HN Algolia API](https://hn.algolia.com/api) to keep up-to-dat
 If you'd like to run this little app on your own machine, then here's how to do it. First, you should make download this repository by either clicking the big ol' download button to the right or by cloning the repository. To clone the repository, open up your `Terminal`, `CMD` or whatever you want to use and enter the following:
 
 ```
-git clone repo_name_here
+git clone https://github.com/declanelcocks/mean-hacker-news-tracker.git
 ```
 
 Voila, we're good to go. Navigate to the folder you've just downloaded and run this to install our server's dependencies.
