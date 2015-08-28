@@ -34,7 +34,7 @@ Voila, we're good to go. Navigate to the folder you've just downloaded and run t
 npm install
 ```
 
-If you open up `config.js` you'll notice that I am currently using a local instance of MongoDB to store the posts, so if you'd like to use a different database, replace the `db` value here.
+If you open up `config.js` you'll notice that I am currently using a local instance of MongoDB to store the posts, so if you'd like to use a different database, replace the `db` value here. Remember that if you're running the app locally, you'll need to run have an instance of MongoDB running locally too.
 
 If it is your first time running the app, then we will need to populate our database. Run the command below and it will fetch the 20 most recent posts from the HN API and insert the valid posts into our database.
 
