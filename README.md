@@ -16,7 +16,7 @@ This app uses the [HN Algolia API](https://hn.algolia.com/api) to keep up-to-dat
 2. Frontend
   - [Angular](https://angularjs.org/)
   - [angular-resource](https://docs.angularjs.org/api/ngResource/service/$resource) - Means we can fetch all of our posts with one line of code, hallelujah.
-  - [angular-route](https://docs.angularjs.org/api/ngRoute/service/$route) - Controlling all of the routing within the app
+  - [angular-route](https://docs.angularjs.org/api/ngRoute/service/$route) - Controls all of the routing within the app.
   - Moment
   - [Bootstrap](http://getbootstrap.com)
 
